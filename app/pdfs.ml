@@ -1,4 +1,4 @@
-let () = print_endline Lib.Example_module.message
+let () = ()
 
 (* Local Variables: *)
 (* mode: tuareg *)

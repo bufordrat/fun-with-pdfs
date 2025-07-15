@@ -1,6 +1,6 @@
 (executable 
- (public_name pdfs) 
  (name pdfs)
+ (public_name pdfs)
  (promote (until-clean))
  (libraries camlp-streams prelude etude lib)) 
 
