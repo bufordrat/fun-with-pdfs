@@ -26,3 +26,9 @@ let objects =
     Pdf.Stream
       (Pdf.Dictionary [("/Length", Pdf.Integer 53)],
       "1 0 0 1 50 770 cm BT /F0 36 Tf (Hello, world!) Tj ET"))]
+
+let hello = { Pdf.version = (1, 1) ;
+              Pdf.objects = objects ;
+              Pdf.trailer =
+                Pdf.Dictionary [("/Size", Pdf.Integer 5);
+                                ("/Root", Pdf.Indirect 2); ] }
