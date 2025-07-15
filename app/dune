@@ -1,12 +1,13 @@
-(executable 
+(executable
  (name pdfs)
  (public_name pdfs)
  (promote (until-clean))
- (libraries camlp-streams prelude etude lib)) 
+ (libraries camlp-streams prelude etude lib))
 
 (env
  (dev
-  (flags (:standard -warn-error -A))))
+  (flags
+   (:standard -warn-error -A))))
 
 ; Local Variables:
 ; mode: dune

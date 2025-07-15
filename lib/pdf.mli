@@ -9,6 +9,8 @@ type pdfobject =
   | Stream of pdfobject * string
   | Indirect of int
 
-type t = { version : int * int;
-           objects : (int * pdfobject) list;
-           trailer : pdfobject ; }
+type t =
+  { version : int * int;
+    objects : (int * pdfobject) list;
+    trailer : pdfobject
+  }
